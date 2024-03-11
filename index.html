@@ -1,0 +1,149 @@
+<html>
+    <head>
+    <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <!-- <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/ml5@0.7.0/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+  <h1 class="btn btn-primary heading">CASE STUDY </h1>
+  <h5>Google Lens vs MobileNet</h5>
+  </center>
+  <hr>
+        <ol>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b> Test Image - </b>
+                    <img src="https://www.shutterstock.com/image-photo/cinnamon-pearl-cockatiel-looking-blue-600nw-1884750919.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS - </b>
+                    <span> Cockatiel </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model - </b>
+                    <span> Seatbelt </span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4> Google Lens is more accurate </h4>
+                </div>
+            </div>
+        
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b> Test Image - </b>
+                    <img src="https://png.pngtree.com/thumb_back/fw800/background/20221126/pngtree-water-bottle-bottle-thirsty-texture-photo-image_303384.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS - </b>
+                    <span> Water Bottle </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model - </b>
+                    <span> Water Bottle </span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4> Both are accurate </h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b> Test Image - </b>
+                    <img src="https://images.unsplash.com/photo-1562975327-29a8cbfd5be6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cnViaWtzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS - </b>
+                    <span> Rubik's Cube</span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model - </b>
+                    <span> Buckle </span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4> Google Lens is more accurate </h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b> Test Image - </b>
+                    <img src="https://allergylicious.com/wp-content/uploads/2018/09/3-closeup-glazed-donuts.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS - </b>
+                    <span> Chocolate Donuts </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model - </b>
+                    <span> Computer Mask </span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4> Google Lens is more accurate </h4>
+                </div>
+            </div>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b> Test Image - </b>
+                    <img src="https://realaquatics.co.uk/cdn/shop/products/ustvyda0zbq.png?v=1703024906" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS - </b>
+                    <span> Freshwater Angelfish </span>
+                </h5>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model - </b>
+                    <span> Spotlight </span>
+                </h5>
+
+                <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4> Google Lens is more accurate </h4>
+                </div>
+            </div>
+        </ol>
+
+        <br><br>
+        <center>
+            <hr>
+	<h4 class="col-xs-12 result"></h4>
+    <h4> Google Lens was more accurate for all of the images I have tested </h4>
+</div>
+</center>
+<br><br>
+    <div class="copy_right_footer">
+        Developed by - Bhavishya Sri
+      </div>
+  
+    </body>
+</html>
